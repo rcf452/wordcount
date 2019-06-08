@@ -1,0 +1,13 @@
+
+
+<a href="{% url 'home' %}"> 다시하기 </a>
+
+<h1>입력한 텍스트: </h1>
+<!-- 입력받은 전체 텍스트 -->
+{{ fulltext }}
+<h1>알파벳 카운트:</h1>
+
+{% for alp, alpcountTotal in dictionary %}
+{{alp}} - {{alpcountTotal}}
+<br>
+{% endfor %}
